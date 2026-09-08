@@ -1,69 +1,90 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
-    const nav = document.getElementById("primary-nav");
-
-    if (!nav) {
-        console.error("Navigation container not found.");
-        return;
-    }
-
-    const pages = [
+    const navigationItems = [
         {
             name: "About Me",
-            url: "index.html"
+            link: "index.html"
         },
         {
             name: "Research",
-            url: "research.html"
+            link: "research.html"
         },
         {
             name: "Teaching",
-            url: "teaching.html"
+            link: "teaching.html"
         },
         {
             name: "Personal",
-            url: "personal.html"
+            link: "personal.html"
         }
     ];
 
-    const currentPage =
-        window.location.pathname.split("/").pop() || "index.html";
+
+    /* Find navigation area */
+
+    const navigation =
+        document.getElementById("primary-nav");
 
 
-    const ul = document.createElement("ul");
+    if (navigation) {
+
+        const navList =
+            document.createElement("ul");
 
 
-    pages.forEach(page => {
+        /* Determine current page */
 
-        const li = document.createElement("li");
-
-        const a = document.createElement("a");
-
-        a.textContent = page.name;
-        a.href = page.url;
+        const currentPage =
+            window.location.pathname
+                .split("/")
+                .pop() || "index.html";
 
 
-        if (currentPage === page.url) {
-            a.classList.add("active");
-        }
+        /* Create each navigation item */
+
+        navigationItems.forEach(function (item) {
+
+            const listItem =
+                document.createElement("li");
+
+            const link =
+                document.createElement("a");
 
 
-        li.appendChild(a);
+            link.textContent = item.name;
 
-        ul.appendChild(li);
-
-    });
+            link.href = item.link;
 
 
-    nav.appendChild(ul);
+            /* Highlight current page */
+
+            if (currentPage === item.link) {
+                link.classList.add("active");
+            }
 
 
-    // Automatically update copyright year
+            listItem.appendChild(link);
 
-    const year = document.getElementById("current-year");
+            navList.appendChild(listItem);
+
+        });
+
+
+        navigation.appendChild(navList);
+
+    }
+
+
+    /* Automatically update footer year */
+
+    const year =
+        document.getElementById("current-year");
 
     if (year) {
-        year.textContent = new Date().getFullYear();
+
+        year.textContent =
+            new Date().getFullYear();
+
     }
 
 });
