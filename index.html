@@ -1,1100 +1,219 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Bao Q. Nguyen | Marketing Portfolio</title>
+    <meta charset="UTF-8">
 
-  <meta
-    name="description"
-    content="Portfolio of Bao Q. Nguyen, Marketing student at Iowa State University with experience in marketing, retail, analytics, event promotion, and community leadership."
-  >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <style>
-    /* =========================
-       GLOBAL
-    ========================== */
+    <title>Your Name | Portfolio</title>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+    <link rel="stylesheet" href="css/style.css">
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f8fafc;
-      color: #1e293b;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    section {
-      padding: 90px 10%;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .section-title h2 {
-      font-size: 36px;
-      color: #0f172a;
-      margin-bottom: 10px;
-    }
-
-    .section-title p {
-      color: #64748b;
-    }
-
-
-    /* =========================
-       NAVIGATION
-    ========================== */
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      padding: 18px 10%;
-
-      background: rgba(15, 23, 42, 0.97);
-    }
-
-    .logo {
-      color: white;
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    .logo span {
-      color: #60a5fa;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
-
-    nav a {
-      color: #e2e8f0;
-      font-size: 15px;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #60a5fa;
-    }
-
-
-    /* =========================
-       HERO
-    ========================== */
-
-    .hero {
-      min-height: 92vh;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      text-align: center;
-
-      background:
-        linear-gradient(
-          135deg,
-          #020617,
-          #0f172a,
-          #1e3a8a
-        );
-
-      color: white;
-
-      padding: 60px 20px;
-    }
-
-    .hero-content {
-      max-width: 850px;
-    }
-
-    .hero-tag {
-      display: inline-block;
-
-      background: rgba(96, 165, 250, 0.15);
-      border: 1px solid #60a5fa;
-
-      color: #93c5fd;
-
-      padding: 8px 16px;
-      border-radius: 30px;
-
-      margin-bottom: 20px;
-
-      font-size: 14px;
-    }
-
-    .hero h1 {
-      font-size: 64px;
-      line-height: 1.1;
-      margin-bottom: 15px;
-    }
-
-    .hero h1 span {
-      color: #60a5fa;
-    }
-
-    .hero h2 {
-      font-size: 25px;
-      font-weight: normal;
-      margin-bottom: 20px;
-      color: #cbd5e1;
-    }
-
-    .hero p {
-      max-width: 700px;
-      margin: 0 auto 30px auto;
-
-      color: #cbd5e1;
-      font-size: 18px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-
-      padding: 13px 24px;
-
-      border-radius: 7px;
-
-      font-weight: bold;
-
-      transition: 0.3s;
-    }
-
-    .btn-primary {
-      background: #2563eb;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: #1d4ed8;
-      transform: translateY(-3px);
-    }
-
-    .btn-outline {
-      border: 2px solid #60a5fa;
-      color: white;
-    }
-
-    .btn-outline:hover {
-      background: #60a5fa;
-      color: #0f172a;
-      transform: translateY(-3px);
-    }
-
-
-    /* =========================
-       ABOUT
-    ========================== */
-
-    .about-container {
-      max-width: 850px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .about-container p {
-      font-size: 18px;
-      color: #475569;
-      margin-bottom: 20px;
-    }
-
-    .about-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-
-      margin-top: 40px;
-    }
-
-    .stat-card {
-      background: white;
-
-      padding: 25px;
-
-      border-radius: 12px;
-
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-    }
-
-    .stat-card h3 {
-      font-size: 30px;
-      color: #2563eb;
-    }
-
-    .stat-card p {
-      font-size: 14px;
-      margin: 0;
-    }
-
-
-    /* =========================
-       EXPERIENCE
-    ========================== */
-
-    #experience {
-      background: #eef2f7;
-    }
-
-    .timeline {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .experience-card {
-      background: white;
-
-      padding: 30px;
-
-      margin-bottom: 25px;
-
-      border-radius: 12px;
-
-      border-left: 5px solid #2563eb;
-
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .experience-card h3 {
-      font-size: 23px;
-      color: #0f172a;
-    }
-
-    .company {
-      color: #2563eb;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .date {
-      color: #64748b;
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-    .experience-card ul {
-      padding-left: 20px;
-    }
-
-    .experience-card li {
-      margin-bottom: 8px;
-      color: #475569;
-    }
-
-
-    /* =========================
-       LEADERSHIP / INVOLVEMENT
-    ========================== */
-
-    .card-grid {
-      display: grid;
-
-      grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
-
-      gap: 25px;
-    }
-
-    .info-card {
-      background: white;
-
-      padding: 30px;
-
-      border-radius: 12px;
-
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-
-      transition: 0.3s;
-    }
-
-    .info-card:hover {
-      transform: translateY(-7px);
-    }
-
-    .info-card h3 {
-      margin-bottom: 8px;
-      color: #0f172a;
-    }
-
-    .info-card h4 {
-      color: #2563eb;
-      margin-bottom: 15px;
-      font-size: 15px;
-    }
-
-    .info-card p {
-      color: #64748b;
-    }
-
-
-    /* =========================
-       SKILLS
-    ========================== */
-
-    #skills {
-      background: #0f172a;
-      color: white;
-    }
-
-    #skills .section-title h2 {
-      color: white;
-    }
-
-    #skills .section-title p {
-      color: #94a3b8;
-    }
-
-    .skills-container {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .skill-category {
-      margin-bottom: 35px;
-    }
-
-    .skill-category h3 {
-      text-align: center;
-      margin-bottom: 18px;
-      color: #93c5fd;
-    }
-
-    .skill-list {
-      display: flex;
-
-      justify-content: center;
-
-      flex-wrap: wrap;
-
-      gap: 12px;
-    }
-
-    .skill {
-      background: #1e293b;
-
-      border: 1px solid #334155;
-
-      padding: 11px 18px;
-
-      border-radius: 30px;
-
-      color: #e2e8f0;
-
-      transition: 0.3s;
-    }
-
-    .skill:hover {
-      border-color: #60a5fa;
-      transform: translateY(-3px);
-    }
-
-
-    /* =========================
-       EDUCATION
-    ========================== */
-
-    .education-card {
-      max-width: 750px;
-      margin: auto;
-
-      background: white;
-
-      padding: 35px;
-
-      border-radius: 12px;
-
-      text-align: center;
-
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-    }
-
-    .education-card h3 {
-      font-size: 26px;
-      color: #0f172a;
-    }
-
-    .education-card h4 {
-      color: #2563eb;
-      margin: 7px 0;
-    }
-
-    .education-card p {
-      color: #64748b;
-    }
-
-
-    /* =========================
-       CONTACT
-    ========================== */
-
-    #contact {
-      background: #e2e8f0;
-      text-align: center;
-    }
-
-    .contact-container {
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .contact-container p {
-      color: #475569;
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .contact-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer {
-      background: #020617;
-      color: #94a3b8;
-
-      text-align: center;
-
-      padding: 25px;
-    }
-
-
-    /* =========================
-       RESPONSIVE
-    ========================== */
-
-    @media (max-width: 768px) {
-
-      nav {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px;
-      }
-
-      .hero h1 {
-        font-size: 43px;
-      }
-
-      .hero h2 {
-        font-size: 20px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      section {
-        padding: 70px 7%;
-      }
-
-      .about-stats {
-        grid-template-columns: 1fr;
-      }
-
-      .section-title h2 {
-        font-size: 30px;
-      }
-    }
-
-  </style>
 </head>
-
 
 <body>
 
-
-  <!-- =========================
-       NAVIGATION
-  ========================== -->
-
-  <nav>
-
-    <div class="logo">
-      Bao <span>Nguyen</span>
-    </div>
-
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#leadership">Leadership</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-  </nav>
+<div class="site-container">
 
 
+    <!-- HEADER -->
 
-  <!-- =========================
-       HERO
-  ========================== -->
+    <header class="site-header">
 
-  <header class="hero">
+        <div class="logo-area">
 
-    <div class="hero-content">
+            <a href="index.html">
+                Your Name
+            </a>
 
-      <div class="hero-tag">
-        Marketing • Analytics • Branding
-      </div>
-
-      <h1>
-        Hi, I'm <span>Bao Nguyen</span>
-      </h1>
-
-      <h2>
-        Marketing Student at Iowa State University
-      </h2>
-
-      <p>
-        I'm a marketing student with experience in retail,
-        digital marketing, analytics, customer experience,
-        event promotion, and community leadership. I enjoy
-        combining creativity with data to better understand
-        customers and help brands grow.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="#experience" class="btn btn-primary">
-          View My Experience
-        </a>
-
-        <a
-          href="resume.pdf"
-          target="_blank"
-          class="btn btn-outline"
-        >
-          View Resume
-        </a>
-
-      </div>
-
-    </div>
-
-  </header>
-
-
-
-  <!-- =========================
-       ABOUT
-  ========================== -->
-
-  <section id="about">
-
-    <div class="section-title">
-
-      <h2>About Me</h2>
-
-      <p>
-        Marketing student, creative thinker, and community leader.
-      </p>
-
-    </div>
-
-
-    <div class="about-container">
-
-      <p>
-        I am currently pursuing a Bachelor of Science in Marketing
-        at the Ivy College of Business at Iowa State University.
-        I am expected to graduate in December 2026.
-      </p>
-
-      <p>
-        My professional experience has helped me develop skills
-        in customer service, retail operations, digital marketing,
-        analytics, branding, visual merchandising, and community
-        engagement.
-      </p>
-
-
-      <div class="about-stats">
-
-        <div class="stat-card">
-          <h3>20K+</h3>
-          <p>
-            Brand audience supported through my work
-            with Biig Pluto
-          </p>
         </div>
 
-        <div class="stat-card">
-          <h3>60%</h3>
-          <p>
-            Increase in event turnout through promotional
-            work with Skate DSM
-          </p>
+
+        <div class="header-right">
+
+            <div class="header-message">
+
+                Finance • Business Analytics • Marketing
+
+            </div>
+
+
+            <!-- Navigation inserted by JavaScript -->
+
+            <nav
+                id="primary-nav"
+                class="primary-navigation">
+            </nav>
+
         </div>
 
-        <div class="stat-card">
-          <h3>50+</h3>
-          <p>
-            Youth mentored through Skate DSM
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
+    </header>
 
 
 
-  <!-- =========================
-       EXPERIENCE
-  ========================== -->
+    <!-- MAIN PAGE -->
 
-  <section id="experience">
-
-    <div class="section-title">
-
-      <h2>Work Experience</h2>
-
-      <p>
-        My experience in retail, marketing, analytics, and customer service.
-      </p>
-
-    </div>
+    <div class="page-layout">
 
 
-    <div class="timeline">
+        <!-- LEFT NAVIGATION -->
 
+        <aside class="left-sidebar">
 
-      <!-- Nordstrom Rack -->
+            <h3>Explore</h3>
 
-      <div class="experience-card">
+            <ul>
 
-        <h3>Retail Stock & Fulfillment</h3>
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
 
-        <div class="company">
-          Nordstrom Rack
-        </div>
+                <li>
+                    <a href="#education">
+                        Education
+                    </a>
+                </li>
 
-        <div class="date">
-          West Des Moines, Iowa | June 2026 – Present
-        </div>
+                <li>
+                    <a href="#experience">
+                        Experience
+                    </a>
+                </li>
 
-        <ul>
+                <li>
+                    <a href="#skills">
+                        Skills
+                    </a>
+                </li>
 
-          <li>
-            Receive, process, and organize merchandise while
-            supporting visual merchandising and brand standards.
-          </li>
+            </ul>
 
-          <li>
-            Fulfill, pack, and ship customer orders accurately
-            while following quality and shipping standards.
-          </li>
-
-          <li>
-            Use inventory management systems to track merchandise
-            and support promotions, markdowns, and store operations.
-          </li>
-
-        </ul>
-
-      </div>
+        </aside>
 
 
 
-      <!-- Skate DSM -->
+        <!-- MAIN CONTENT -->
 
-      <div class="experience-card">
+        <main class="main-content">
 
-        <h3>Mentor</h3>
+            <div class="hero">
 
-        <div class="company">
-          Skate DSM
-        </div>
+                <img
+                    src="images/hero.jpg"
+                    alt="Website hero image"
+                >
 
-        <div class="date">
-          Des Moines, Iowa | September 2024 – Present
-        </div>
-
-        <ul>
-
-          <li>
-            Mentor more than 50 children in skateboarding,
-            safe riding techniques, discipline, and resilience.
-          </li>
-
-          <li>
-            Design and promote skateboarding events using Canva.
-          </li>
-
-          <li>
-            Helped increase event turnout by approximately
-            60% while strengthening engagement in the
-            Des Moines skate community.
-          </li>
-
-        </ul>
-
-      </div>
+            </div>
 
 
+            <h1>About Me</h1>
 
-      <!-- Biig Pluto -->
+            <p>
+                Welcome to my website. This area contains
+                the main information about my education,
+                professional experience, interests, and work.
+            </p>
 
-      <div class="experience-card">
 
-        <h3>Marketing & Screen-Printing</h3>
+            <div class="content-card">
 
-        <div class="company">
-          Biig Pluto Clothing Brand
-        </div>
+                <h2>Education</h2>
 
-        <div class="date">
-          Des Moines, Iowa | August 2023 – August 2026
-        </div>
+                <p>
+                    Add your education information here.
+                </p>
 
-        <ul>
+            </div>
 
-          <li>
-            Analyzed audience insights using Google Analytics
-            to support content strategy for a brand with
-            more than 20,000 followers.
-          </li>
 
-          <li>
-            Used Adobe Photoshop to support screen-printing
-            production and product quality.
-          </li>
+            <div class="content-card">
 
-          <li>
-            Used Qualtrics and in-person customer interactions
-            to support customer experience, marketing strategy,
-            and sales.
-          </li>
+                <h2>Experience</h2>
 
-        </ul>
+                <p>
+                    Add your professional experience here.
+                </p>
 
-      </div>
+            </div>
+
+        </main>
+
+
+
+        <!-- RIGHT SIDEBAR -->
+
+        <aside class="right-sidebar">
+
+            <div class="sticky-content">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>LinkedIn</li>
+
+                    <li>GitHub</li>
+
+                    <li>Resume</li>
+
+                    <li>Projects</li>
+
+                </ul>
+
+            </div>
+
+        </aside>
 
 
     </div>
 
-  </section>
 
 
+    <!-- FOOTER -->
 
-  <!-- =========================
-       LEADERSHIP
-  ========================== -->
-
-  <section id="leadership">
-
-    <div class="section-title">
-
-      <h2>Leadership & Involvement</h2>
-
-      <p>
-        Community involvement and professional development.
-      </p>
-
-    </div>
-
-
-    <div class="card-grid">
-
-
-      <!-- Al Exito -->
-
-      <div class="info-card">
-
-        <h3>
-          Al Éxito Career Exploration Camp
-        </h3>
-
-        <h4>
-          Facilitator
-        </h4>
+    <footer class="site-footer">
 
         <p>
-          Developed weekly agendas using PowerPoint and
-          facilitated programming for more than 42 students.
-          Led workshops focused on branding, communication,
-          leadership, and real-world marketing principles.
+
+            © <span id="current-year"></span>
+            Your Name
+
+            |
+
+            <a href="index.html">
+                Home
+            </a>
+
+            |
+
+            <a href="research.html">
+                Research
+            </a>
+
+            |
+
+            <a href="personal.html">
+                Personal
+            </a>
+
         </p>
 
-      </div>
+    </footer>
 
 
+</div>
 
-      <!-- Multicultural Business Networking Club -->
 
-      <div class="info-card">
-
-        <h3>
-          Multicultural Business Networking Club
-        </h3>
-
-        <h4>
-          Iowa State University
-        </h4>
-
-        <p>
-          Networked with more than 20 employers and participated
-          in marketing events, professional development programs,
-          employer panels, and cross-cultural student activities.
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================
-       SKILLS
-  ========================== -->
-
-  <section id="skills">
-
-    <div class="section-title">
-
-      <h2>Technical Skills</h2>
-
-      <p>
-        Tools I use for marketing, analytics, communication, and design.
-      </p>
-
-    </div>
-
-
-    <div class="skills-container">
-
-
-      <!-- Analytics -->
-
-      <div class="skill-category">
-
-        <h3>Analytics & Research</h3>
-
-        <div class="skill-list">
-
-          <div class="skill">Google Analytics</div>
-          <div class="skill">Qualtrics</div>
-          <div class="skill">IBM SPSS Statistics</div>
-          <div class="skill">Google Forms</div>
-          <div class="skill">Excel</div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Content -->
-
-      <div class="skill-category">
-
-        <h3>Content & Design</h3>
-
-        <div class="skill-list">
-
-          <div class="skill">Adobe Photoshop</div>
-          <div class="skill">Canva</div>
-          <div class="skill">PowerPoint</div>
-          <div class="skill">Microsoft Word</div>
-          <div class="skill">Google Docs</div>
-          <div class="skill">Outlook</div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Languages -->
-
-      <div class="skill-category">
-
-        <h3>Languages</h3>
-
-        <div class="skill-list">
-
-          <div class="skill">
-            Vietnamese — Native Proficiency
-          </div>
-
-          <div class="skill">
-            English — Native Proficiency
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================
-       EDUCATION
-  ========================== -->
-
-  <section id="education">
-
-    <div class="section-title">
-
-      <h2>Education</h2>
-
-    </div>
-
-
-    <div class="education-card">
-
-      <h3>
-        Iowa State University
-      </h3>
-
-      <h4>
-        Ivy College of Business
-      </h4>
-
-      <p>
-        Bachelor of Science in Marketing
-      </p>
-
-      <p>
-        Expected Graduation: December 2026
-      </p>
-
-      <p>
-        GPA: 3.35 / 4.00
-      </p>
-
-      <p>
-        Ames, Iowa
-      </p>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================
-       CONTACT
-  ========================== -->
-
-  <section id="contact">
-
-    <div class="section-title">
-
-      <h2>Let's Connect</h2>
-
-    </div>
-
-
-    <div class="contact-container">
-
-      <p>
-        I'm interested in opportunities related to marketing,
-        digital strategy, analytics, branding, customer experience,
-        and business development.
-      </p>
-
-
-      <div class="contact-buttons">
-
-        <a
-          href="mailto:kevinbao59@gmail.com"
-          class="btn btn-primary"
-        >
-          Email Me
-        </a>
-
-
-        <!-- Replace this with your actual LinkedIn URL -->
-
-        <a
-          href="https://www.linkedin.com/in/YOUR-LINKEDIN"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          LinkedIn
-        </a>
-
-
-        <!-- Replace YOUR-USERNAME -->
-
-        <a
-          href="https://github.com/YOUR-USERNAME"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          GitHub
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
-  <footer>
-
-    <p>
-      © 2026 Bao Q. Nguyen | Marketing Portfolio
-    </p>
-
-  </footer>
-
+<script src="js/navigation.js"></script>
 
 </body>
+
 </html>
