@@ -1,19 +1,390 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>Your Name | Portfolio</title>
+    <title>Your Name | About Me</title>
+
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
-<script src="./js/navigation.js"></script>
+
+
+<body>
+
+
+<div class="site-container">
+
+
+    <!-- =====================
+         HEADER
+    ====================== -->
+
+    <header class="site-header">
+
+
+        <!-- LOGO / NAME -->
+
+        <div class="logo-area">
+
+            <a href="index.html">
+                Your Name
+            </a>
+
+        </div>
+
+
+        <!-- HEADER RIGHT SIDE -->
+
+        <div class="header-right">
+
+
+            <div class="header-message">
+
+                Finance • Business Analytics • Marketing
+
+            </div>
+
+
+            <!-- JavaScript creates navigation here -->
+
+            <nav
+                id="primary-nav"
+                class="primary-navigation">
+            </nav>
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =====================
+         SECONDARY NAVIGATION
+    ====================== -->
+
+    <nav class="secondary-navigation">
+
+        <ul>
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#education">
+                    Education
+                </a>
+            </li>
+
+            <li>
+                <a href="#experience">
+                    Experience
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills">
+                    Skills
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- =====================
+         PAGE
+    ====================== -->
+
+    <div class="page-layout">
+
+
+        <!-- LEFT SIDEBAR -->
+
+        <aside class="left-sidebar">
+
+            <h3>
+                Explore
+            </h3>
+
+
+            <ul>
+
+                <li>
+                    <a href="#about">
+                        About Me
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#education">
+                        Education
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#experience">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills">
+                        Skills
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+
+        <!-- =====================
+             MAIN CONTENT
+        ====================== -->
+
+        <main class="main-content">
+
+
+            <!-- HERO -->
+
+            <section class="hero">
+
+                <h1>
+                    Welcome
+                </h1>
+
+                <p>
+                    Finance • Business Analytics • Marketing
+                </p>
+
+            </section>
+
+
+
+            <!-- ABOUT -->
+
+            <section id="about">
+
+                <h1>
+                    About Me
+                </h1>
+
+
+                <p>
+
+                    Welcome to my personal website.
+                    This website highlights my education,
+                    professional experience, skills,
+                    projects, and interests.
+
+                </p>
+
+                <p>
+
+                    I am interested in business,
+                    finance, analytics, and marketing.
+                    I enjoy learning how businesses use
+                    data and strategy to make better
+                    decisions.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- EDUCATION -->
+
+            <section
+                id="education"
+                class="content-card"
+            >
+
+                <h2>
+                    Education
+                </h2>
+
+                <p>
+                    Add your university, major,
+                    graduation date, coursework,
+                    and academic achievements here.
+                </p>
+
+            </section>
+
+
+
+            <!-- EXPERIENCE -->
+
+            <section
+                id="experience"
+                class="content-card"
+            >
+
+                <h2>
+                    Experience
+                </h2>
+
+                <p>
+                    Add information about your work
+                    experience, internships, leadership,
+                    and volunteer experience here.
+                </p>
+
+            </section>
+
+
+
+            <!-- SKILLS -->
+
+            <section
+                id="skills"
+                class="content-card"
+            >
+
+                <h2>
+                    Skills
+                </h2>
+
+                <p>
+
+                    Microsoft Excel • Microsoft Word •
+                    PowerPoint • Google Analytics •
+                    Business Analytics • Marketing
+
+                </p>
+
+            </section>
+
+
+        </main>
+
+
+
+        <!-- =====================
+             RIGHT SIDEBAR
+        ====================== -->
+
+        <aside class="right-sidebar">
+
+
+            <div class="sticky-content">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            LinkedIn
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            GitHub
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Resume
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="research.html">
+                            Projects
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </aside>
+
+
+    </div>
+
+
+
+    <!-- =====================
+         FOOTER
+    ====================== -->
+
+    <footer class="site-footer">
+
+        <p>
+
+            ©
+            <span id="current-year"></span>
+            Your Name
+
+            |
+
+            <a href="index.html">
+                About Me
+            </a>
+
+            |
+
+            <a href="research.html">
+                Research
+            </a>
+
+            |
+
+            <a href="teaching.html">
+                Teaching
+            </a>
+
+            |
+
+            <a href="personal.html">
+                Personal
+            </a>
+
+        </p>
+
+    </footer>
+
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="navigation.js"></script>
+
 
 </body>
+
 </html>
-<img src="./images/hero.jpg" alt="Website hero image">
