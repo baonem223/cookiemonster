@@ -2,12 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const navigationItems = [
         {
-            name: "Products",
-            link: "products.html"
+            name: "About Me",
+            link: "index.html"
         },
         {
             name: "Research",
             link: "research.html"
+        },
+        {
+            name: "Product",
+            link: "product.html"
         },
         {
             name: "Teaching",
@@ -88,31 +92,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
-const navigationItems = [
-
-    {
-        name: "About Me",
-        link: "index.html"
-    },
-
-    {
-        name: "Research",
-        link: "research.html"
-    },
-
-    {
-        name: "Product",
-        link: "product.html"
-    },
-
-    {
-        name: "Teaching",
-        link: "teaching.html"
-    },
-
-    {
-        name: "Personal",
-        link: "personal.html"
-    }
-
-];
