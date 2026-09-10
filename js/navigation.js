@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const navigationItems = [
         {
-            name: "About Me",
-            link: "index.html"
+            name: "Products",
+            link: "products.html"
         },
         {
             name: "Research",
