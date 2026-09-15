@@ -1,1 +1,3 @@
-Binary file - image data would be inserted here
+<img src="headshot.jpg"
+     alt="Bao Nguyen Professional Headshot"
+     class="profile-photo">
